@@ -1,0 +1,14 @@
+{
+  // https://developer.chrome.com/extensions/manifest
+  "manifest_version": 2,
+  "name": "Notify on very low period alarm",
+  "version": "0.1.0",
+  "description": "chrome.extension.notification calls hang Chrome if they occur too often",
+
+  "author": "Dan Dascalescu",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false  // Event pages, https://developer.chrome.com/extensions/event_pages
+  },
+  "permissions": ["alarms", "notifications"]
+}
